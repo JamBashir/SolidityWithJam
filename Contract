@@ -25,3 +25,10 @@
 
 namespace solidity::test
 {
+
+class ContractInterface
+{
+public:
+	ContractInterface(ExecutionFramework& _framework): m_framework(_framework) {}
+
+	void setNextValue(u256 const& _value) { m_nextValue = _value; }
