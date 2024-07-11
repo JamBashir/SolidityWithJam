@@ -1,1 +1,1 @@
-# SolidityWithMe
+# SolidityWithJam
