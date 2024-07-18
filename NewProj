@@ -37,3 +37,7 @@ contract Ballot {
         // For each of the provided proposal names,
         // create a new proposal object and add it
         // to the end of the array.
+for (uint i = 0; i < proposalNames.length; i++) {
+            // `Proposal({...})` creates a temporary
+            // Proposal object and `proposals.push(...)`
+            // appends it to the end of `proposals`.
