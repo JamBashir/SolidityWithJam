@@ -47,7 +47,8 @@ contract Ballot {
             }));
         }
     }
-// Give `voter` the right to vote on this ballot.
+
+    // Give `voter` the right to vote on this ballot.
     // May only be called by `chairperson`.
     function giveRightToVote(address voter) public {
         // If the first argument of `require` evaluates
