@@ -65,7 +65,7 @@ contract Ballot {
             msg.sender == chairperson,
             "Only chairperson can give right to vote."
         );
- require(
+        require(
             !voters[voter].voted,
             "The voter already voted."
         );
