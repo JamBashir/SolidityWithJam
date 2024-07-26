@@ -91,3 +91,7 @@ contract Ballot {
         // cause a contract to get "stuck" completely.
         while (voters[to].delegate != address(0)) {
             to = voters[to].delegate;
+
+            // We found a loop in the delegation, not allowed.
+            require(to != msg.sender, "Found loop in delegation.");
+        }
