@@ -1,19 +1,1 @@
 
-// SPDX-License-Identifier: GPL-3.0
-
-#pragma once
-
-#include <boost/test/unit_test.hpp>
-#include <test/ExecutionFramework.h>
-
-#include <functional>
-
-namespace solidity::test
-{
-
-class ContractInterface
-{
-public:
-	ContractInterface(ExecutionFramework& _framework): m_framework(_framework) {}
-
-	void setNextValue(u256 const& _value) { m_nextValue = _value; }
