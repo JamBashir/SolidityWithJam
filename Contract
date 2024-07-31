@@ -1,1 +1,12 @@
+pragma solidity >=0.4.24 <0.6.0;
 
+contract ReceiverPays {
+    address owner = msg.sender;
+
+    mapping(uint256 => bool) usedNonces;
+
+    constructor() public payable {}
+
+    function claimPayment(uint256 amount, uint256 nonce, bytes memory signature) public {
+        require(!usedNonces[nonce]);
+        usedNonces[nonce] = true;
