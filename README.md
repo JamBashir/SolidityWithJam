@@ -1,2 +1,2 @@
 # SolidityWithJam
-This is my repo That I trying to test new things!
+TThis repo is my experience while learning Solidity
